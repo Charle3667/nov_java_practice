@@ -8,10 +8,30 @@
 </head>
 <body>
     <script>
-        let name = "John";
-        let admin;
-        admin = name;
-        alert(admin)
+        function add7(n) {
+            let solution = (n+7)
+            alert(n + " plus 7 is equal to " + solution)
+        }
+
+        function multiply(a,b) {
+            let solution = (a*b)
+            alert(a + " multiplied by " + b + " is equal to " + solution)
+        }
+
+        function cap() {
+            let str = prompt("Type Something.");
+            let first = str.substr(0,1);
+            let last = str.substr(1);
+            let first2 = first.toUpperCase();
+            let last2 = last.toLocaleLowerCase();
+            alert(first2 + last2)
+        }
+
+        function lastLetter() {
+            let str = prompt("Type Something");
+            let answer = str.substr(-1);
+            alert("the last letter of the massage is " + answer)
+        }
     </script>
 </body>
 </html>
